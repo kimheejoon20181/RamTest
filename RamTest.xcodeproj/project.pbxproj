@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2B0BF7C9896490DEAE037B7 /* Pods_RamTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB42E5EC98DBE514D2B160E /* Pods_RamTest.framework */; };
 		F59CE79A22963B8700E0E98A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CE79922963B8700E0E98A /* AppDelegate.swift */; };
 		F59CE79C22963B8700E0E98A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59CE79B22963B8700E0E98A /* ViewController.swift */; };
 		F59CE79F22963B8700E0E98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59CE79D22963B8700E0E98A /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EB42E5EC98DBE514D2B160E /* Pods_RamTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RamTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		374DA315A70284F6705F3C9A /* Pods-RamTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamTest.debug.xcconfig"; path = "Target Support Files/Pods-RamTest/Pods-RamTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AFB17B8EA6F762A690A4F379 /* Pods-RamTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamTest.release.xcconfig"; path = "Target Support Files/Pods-RamTest/Pods-RamTest.release.xcconfig"; sourceTree = "<group>"; };
 		F59CE79622963B8700E0E98A /* RamTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59CE79922963B8700E0E98A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59CE79B22963B8700E0E98A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B0BF7C9896490DEAE037B7 /* Pods_RamTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1616C8DC4DBA165CAE5CF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EB42E5EC98DBE514D2B160E /* Pods_RamTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D59372E9AF508538F12D564 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				374DA315A70284F6705F3C9A /* Pods-RamTest.debug.xcconfig */,
+				AFB17B8EA6F762A690A4F379 /* Pods-RamTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F59CE78D22963B8700E0E98A = {
 			isa = PBXGroup;
 			children = (
 				F59CE79822963B8700E0E98A /* RamTest */,
 				F59CE79722963B8700E0E98A /* Products */,
+				9D59372E9AF508538F12D564 /* Pods */,
+				1F1616C8DC4DBA165CAE5CF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F59CE7A822963B8900E0E98A /* Build configuration list for PBXNativeTarget "RamTest" */;
 			buildPhases = (
+				D259E84A8B66449C6CCEAFB9 /* [CP] Check Pods Manifest.lock */,
 				F59CE79222963B8700E0E98A /* Sources */,
 				F59CE79322963B8700E0E98A /* Frameworks */,
 				F59CE79422963B8700E0E98A /* Resources */,
+				2DFC08053817FBCF7B350AAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DFC08053817FBCF7B350AAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RamTest/Pods-RamTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RamTest/Pods-RamTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RamTest/Pods-RamTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D259E84A8B66449C6CCEAFB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RamTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F59CE79222963B8700E0E98A /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		F59CE7A922963B8900E0E98A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374DA315A70284F6705F3C9A /* Pods-RamTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +365,7 @@
 		};
 		F59CE7AA22963B8900E0E98A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB17B8EA6F762A690A4F379 /* Pods-RamTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
